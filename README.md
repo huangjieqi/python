@@ -1,9 +1,10 @@
 <div align="center">
-  <h1>python flask架站自我策展</h1>
+  <h1><a href="http://zxpzxp.cn/">python flask架站自我策展</a></h1>
+
   <p>python_falsk_web</p>
 </div>
 
-
+# 项目地址[zxpzxp.cn](http://zxpzxp.cn/)
 > 18级《Python》的每一位同学要展示总结其Python能力，以笔记及电子讲义的列表目录及说明页为入口，放在Github或Github架的Jekyll网站为主，并提交自我策展说明页 url。
 
 |发布日期|2020年1月5日|
@@ -22,7 +23,6 @@
 
 ## :warning:协作作品的要求（python部分）：
 
-####[暂定]18级《python》评分点：
 - 是否实现交互功能 (HTML表, 若17级不给力的话，至少做到表的交互没图的话)
 - 是否实现在pythonanywhere布署可用
 - 基本Readme.md技术文档之总结说明, 含項目之代码Github URL
@@ -35,14 +35,15 @@
 ├── README.md                //项目文档
 ├── data                     //图表数据
 ├── app
-│	├──	__init__
-│	├── views                     // 路由配置
+│    ├──__init__
+│    ├── views                     // 路由配置
 │   ├── static
 │   │	└── assets              // 网站样式
-│  	│		 ├── css         	// 样式
-│   │		 ├── fonts		    // 字体
-│   │		 ├── img            // 图片
-│   │		 └── js             // 脚本
+│   │	│		
+│   │	├── css         	// 样式
+│   │   ├── fonts		    // 字体
+│   │	├── img            // 图片
+│   │   └── js             // 脚本
 │   └── templates         // html模板
 │   	├── includes         // html组件
 │   	├── layouts
@@ -56,14 +57,14 @@
 
 ### 技术文档书写
 #### HTML档描述
-	##### 基于[Argon - Design System](https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html)框架进行开发：
+>基于[Argon - Design System](https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html)框架进行开发：
    - [Bootstrap 4](https://getbootstrap.com/)-开源前端框架
    - [jQuery-快速](https://jquery.com/https://jquery.com/)，小型和功能丰富的JavaScript库
    - [Open Sans字体](https://fonts.google.com/specimen/Open+Sans) -Google的开源字体
    - [条纹元素 -表单](https://github.com/stripe/elements-examples/#example-1)，按钮和元素
 
 #### Python档描述/自定义函数与模块功能
-	##### python项目结构
+##### python项目结构
   >样板代码采用模块化结构构建,下面列出了最重要的文件/目录：
   ```
   < ROOT > - Flask Dashboard Argon  # application root folder
@@ -183,17 +184,6 @@ def jiaohu_1():
                                                        ))
 
 ```
-
-
-
-
-
-
-#### HTML界面
-- 实现数据的python——>HTML页面交互（如果Python有数据循环、复杂的数据结构，请务必检查前端是否正确接收到同样的数据传递结果）（80%）
-
-
-- 符合jinja2标准（20%）
 
 
 #### 上传pythonanywhere/提交域名完善的个人网站
