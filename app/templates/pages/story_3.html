@@ -1,0 +1,214 @@
+  <!-- Main content -->
+  <div class="main-content">
+
+    <!-- Top navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">仪表板</a>
+        <!-- Form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+        </form>
+        <!-- User -->
+        {% include 'includes/user-dropdown.html' %}
+        
+      </div>
+    </nav>
+
+    <!-- Header -->
+    {% include 'includes/top-stats_2.html' %}
+
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+      <div class="row mt-4">
+        <div class="col-xl-6 mb-5 mb-xl-0">
+          <div class="card shadow">
+
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ word_3|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-6 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ word_4|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-xl-10 container">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的发展</h6>
+                  <h2 class="mb-0">你属于人口结构的支柱吗？</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">第五第六次普查人口金字塔</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+                  <p>第五次人口的普查呈现静止型，各年龄组人口比重大致均衡；</p>
+                  <p>而第六次人口普查底部收缩，上部变宽。这反映少年儿童人口比重缩小，老年人口比重增大。</p>
+                  <p>第五次和第六次人口普查反映了我国的人口结构从“金字塔”逐渐变成了“倒金字塔”。</p>
+                  <p>说明我国老龄化越来越严重，劳动力人口供给在不断减少。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ word_5|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的发展</h6>
+                  <h2 class="mb-0">劳动人口的负担有多重？</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">近十年中国抚养比情况</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+                  <p>由图发现，少儿的抚养比在逐年下降，而老年的抚养比在逐年上升，总的抚养比也是出于逐年上升状态。</p>
+                  <p>这说明我国的生育率水平偏低，但是老龄化进程加速</p>
+                  <p>劳动人口所需要抚养的老年逐年上升</p>
+                  <p>老年的抚养压力越来越大，生小孩的意愿越来越低。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ word_6|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的发展</h6>
+                  <h2 class="mb-0">老年人的健康情况</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">老年人健康情况玫瑰图</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+                  <p>由图可以看出，老年人口健康和不健康站绝大部分。</p>
+                  <p>不健康但是生活能治理的占小一部分，</p>
+                  <p>生活完全不能治理的只占小部分。</p>
+                  <p>这说明虽然我国的老龄人口较多，但是大部分是健康且有自理的能力的。</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ word_7|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的末尾</h6>
+                  <h2 class="mb-0">你结婚/离婚了吗？</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">结婚离婚堆叠图</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+                  <p>由图看出，我国的结婚登记人数呈现“过山车”的局势，2009年是2013年是上升阶段，但是2013年后又开始下降。</p>
+                  <p>根据调查，很多人在13年选择结婚是因为该数字存在吉祥的寓意。“1314”是对爱情的保证，也是对自己爱情的祝福； 而我国的离婚登记人数却一直在上升的趋势。</p>
+                  <p>人们对爱情的要求随着大环境的改变而产生变化，人们对爱情的高要求和本身的就业等压力是离婚人数逐年上升的主要原因。</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      {% include 'includes/footer.html' %}
+
+    </div>
+  </div>
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="fe381239b6aa4b5689a9f6cbd61499fc" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_fe381239b6aa4b5689a9f6cbd61499fc = echarts.init(
+            document.getElementById('fe381239b6aa4b5689a9f6cbd61499fc'), 'white', {renderer: 'canvas'});
+        var option_fe381239b6aa4b5689a9f6cbd61499fc = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5c0f\u5b66\u7537\u6027",
+                    "value": 0.4757260616246082
+                },
+                {
+                    "name": "\u5c0f\u5b66\u5973\u6027",
+                    "value": 0.15244784365925393
+                }
+            ],
+            "radius": [
+                60,
+                80
+            ],
+            "center": [
+                "20%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u521d\u4e2d\u7537\u6027",
+                    "value": 0.5389982680707901
+                },
+                {
+                    "name": "\u521d\u4e2d\u5973\u6027",
+                    "value": 0.4610017319292099
+                }
+            ],
+            "radius": [
+                60,
+                80
+            ],
+            "center": [
+                "55%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u9ad8\u4e2d\u7537\u6027",
+                    "value": 0.5552640877115967
+                },
+                {
+                    "name": "\u9ad8\u4e2d\u5973\u6027",
+                    "value": 0.44473591228840326
+                }
+            ],
+            "radius": [
+                60,
+                80
+            ],
+            "center": [
+                "20%",
+                "70%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5927\u4e13\u7537\u6027",
+                    "value": 0.5205494151733019
+                },
+                {
+                    "name": "\u5927\u4e13\u5973\u6027",
+                    "value": 0.4794438780985084
+                }
+            ],
+            "radius": [
+                60,
+                80
+            ],
+            "center": [
+                "55%",
+                "70%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5c0f\u5b66\u7537\u6027",
+                "\u5c0f\u5b66\u5973\u6027",
+                "\u521d\u4e2d\u7537\u6027",
+                "\u521d\u4e2d\u5973\u6027",
+                "\u9ad8\u4e2d\u7537\u6027",
+                "\u9ad8\u4e2d\u5973\u6027",
+                "\u5927\u4e13\u7537\u6027",
+                "\u5927\u4e13\u5973\u6027"
+            ],
+            "selected": {},
+            "type": "scroll",
+            "show": true,
+            "left": "80%",
+            "top": "20%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "6\u5c81\u53ca6\u5c81\u4ee5\u4e0a\u7537\u5973\u53d7\u6559\u80b2\u6bd4\u4f8b"
+        }
+    ]
+};
+        chart_fe381239b6aa4b5689a9f6cbd61499fc.setOption(option_fe381239b6aa4b5689a9f6cbd61499fc);
+    </script>
+</body>
+</html>

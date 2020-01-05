@@ -1,0 +1,160 @@
+  <!-- Main content -->
+  <div class="main-content">
+
+    <!-- Top navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">仪表板</a>
+        <!-- Form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+        </form>
+        <!-- User -->
+        {% include 'includes/user-dropdown.html' %}
+        
+      </div>
+    </nav>
+
+    <!-- Header -->
+    {% include 'includes/top-stats_1.html' %}
+
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+      <div class="row">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+
+            <div class="card-body">
+
+              <div style="height: 100%;width: 100%">
+                  {{ fp_1|safe }}
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的开始</h6>
+                  <h2 class="mb-0">比我们贫穷的人还有哪些？（贫困现状）</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">GDP、农村城市低保人数对比</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+                  <p>从2009年到2018年城市低保人数在逐步下降</p>
+                  <p>在2009年到2018年中，农村低保户在2009年到2013年期间人数上涨，2013年到2018年开始下降</p>
+                  <p>我国gdp指标逐年上涨</p>
+                  <p>本数据运用gdp指标代替gdp总值以平衡乡村城市数据的差异</p>
+                  <h3>结论</h3>
+                  <p>从2009到2018年期间城市低保人数逐渐下降，gdp的上升，说明中国城市化进展速度快</p>
+                  <p>中国贫富差距依然存在，但在2013年习近平主席提出精准扶贫后，农村低保户开始下降</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ fp_4|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的发展</h6>
+                  <h2 class="mb-0">城镇农村谁比较有钱消费？</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">历年城镇农村人均可支配收入（消费支出）情况</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+                  <h2>城镇农村人均可支配收入（消费支出）图中可以看出一下信息</h2>
+                  <p>城镇农村的收入和支出都在逐年上升，而且增长的趋势较为稳定和平缓，但是城镇和乡村的收入差距还是存在一定的差距。</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ fp_5|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的发展</h6>
+                  <h2 class="mb-0">中国哪些人先富了起来？</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">历年分省GDP时间线轮播图</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+                  <p>从历年分省GDP可以看出历年来，沿海地区GDP增长较快，内陆地区较为缓慢，其中山东、广东、江苏发展迅速，内陆地区四川、河南发展迅速。</p>
+                  <p>直至进入广东、江苏、山东三省为gdp贡献最高的三个省份</p>
+                  <h3>结论</h3>
+                  <p>改革开放后，中国个省份gdp都有明显的上升，尤其是沿海地区</p>
+                  <p>改革开放使一部分的人民真正的富裕起来了</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      {% include 'includes/footer.html' %}
+
+    </div>
+  </div>
+
