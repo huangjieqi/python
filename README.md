@@ -35,8 +35,8 @@
 ├── README.md                //项目文档
 ├── data                     //图表数据
 ├── app
-│    ├──__init__
-│    ├── views                     // 路由配置
+│   ├──__init__
+│   ├── views                     // 路由配置
 │   ├── static
 │   │	└── assets              // 网站样式
 │   │	│		
