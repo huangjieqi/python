@@ -1,0 +1,129 @@
+  <!-- Main content -->
+  <div class="main-content">
+
+    <!-- Top navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">仪表板</a>
+        <!-- Form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+        </form>
+        <!-- User -->
+        {% include 'includes/user-dropdown.html' %}
+        
+      </div>
+    </nav>
+
+    <!-- Header -->
+    {% include 'includes/top-stats_4.html' %}
+
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+
+      <div class="row">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+         <div class="card-header bg-transparent">
+		 
+				{% if msg %}
+                   <div class="row align-items-center">
+                  <div class="col text-center">
+                    <h2 class="text-warning ">{{ msg | safe }}</h2>
+            
+                  </div>
+                </div>
+                {% else %}
+                  <div class="row align-items-center">
+                  <div class="col">
+                    <h2 class="mb-0">教务系统学分查询</h2>
+                      <h6 class="text-uppercase text-muted ls-1 mb-1">请输入账号密码</h6>
+                  </div>
+                </div>
+                {% endif %}
+		 
+		 
+                
+              </div>
+            <div class="card-body ">
+              <div style="height: 100%;width: 100%">
+                     <form method="POST" action="/grade_data">
+
+                            <div class="form-group container  "  style="width:332px;">
+                            <div class="input-group input-group-alternative" >
+                              <div class="input-group-pre pend" >
+                                <span class="input-group-text"><i class="ni ni-hat-3"> 账号:</i></span>
+                              </div>
+                               <input class="btn btn-outline-secondary dropdown-toggle" type="text" name="zhanghao" placeholder="请输入账号"/><br>
+                            </div>
+                          </div>
+                          <div class="form-group  container " style="width:332px;" >
+                            <div class="input-group input-group-alternative" >
+                              <div class="input-group-prepend" >
+                                <span class="input-group-text"><i class="ni ni-lock-circle-open"> 密码:</i></span>
+                              </div>
+                              <input class="btn btn-outline-secondary dropdown-toggle" type="password" name="mima" placeholder="请输入密码"/><br>
+                            </div>
+                          </div>
+                          <div class="text-center">
+                          <button type="submit" class="btn btn-primary my-4">登录</button>
+                          </div>
+
+
+
+                       
+                </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+       
+          <div class="col-xl-4">
+            <div class="card shadow">
+              <div class="card-header bg-transparent">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h2 class="mb-0">温馨提示</h2>
+                      <h6 class="text-uppercase text-muted ls-1 mb-1">查询前须知</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- Chart -->
+                 <p>此应用是直接爬取教务系统数据进行查询的</p>
+                 <p>此应用为云服务器托管，为预防黑客攻击被盗取数据，此应用不保存用户的账号密码数据</p>
+                 <p>此应用是基于文学与传媒学院18年级人才培养方案进行设计，如因数据原因导致其他纠纷发生，概不负责</p>
+                 <p>请正确输入账号和密码，由于技术原因，现阶段输入错误还不能在前端报错，如果页面未正确跳转，请返回该界面重新输入账号密码</p>
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+    
+
+        </div>
+
+        {% include 'includes/footer.html' %}
+
+      </div>
+
+
+
+
+
+

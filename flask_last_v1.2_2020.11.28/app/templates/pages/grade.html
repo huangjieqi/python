@@ -1,0 +1,168 @@
+  <!-- Main content -->
+  <div class="main-content">
+
+    <!-- Top navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">仪表板</a>
+        <!-- Form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+        </form>
+        <!-- User -->
+        {% include 'includes/user-dropdown.html' %}
+        
+      </div>
+    </nav>
+
+    <!-- Header -->
+    {% include 'includes/top-stats_4.html' %}
+
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+
+
+
+
+
+      <div class="row">
+        <div class="col-xl-12 mb-5 mb-xl-0 container">
+          <div class="card shadow">
+
+
+              <div class="card-header bg-transparent" id="jiaohu_3">
+                 <div class="row align-items-center">
+                  <div class="col">
+                    <h1 class="mb-0">学分明细表</h1>
+                     
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+
+              <div style="height: 100%;width: 100%" class="table-responsive">
+                  <table border="0" width="800" height="150" bgcolor="black" align="center" class="table table-bordered"> 
+
+
+                         <tr bgcolor="white" align="center">
+                            <td rowspan="4"> </td> 
+                            <td rowspan="3"> 毕业总学分 </td>
+                            <td colspan="2"> 公共教育 </td>
+                            <td colspan="4"> 专业教育 </td>
+                            <td> 成长教育 </td>
+                       
+                           
+                         </tr>
+                         
+                           <tr bgcolor="white" align="center">
+                            
+                            <td rowspan="2"> 公共必修 </td>
+                            <td rowspan="2"> 公共选修 </td>
+                            <td colspan="3"> 专业必修课 </td>
+                            <td rowspan="2"> 专业选修课 </td>
+                            <td rowspan="2"> 成长必修课 </td>
+
+                         </tr>
+                         <tr bgcolor="white" align="center">
+
+                            <td> 专业核心课</td>    
+                            <td> 专业方向课</td>
+                            <td> 专业实习+毕业论文</td>
+
+                            
+                         </tr>
+
+                          <tr bgcolor="white" align="center">
+                            <!-- <td> </td>  -->
+                            <td>150</td> 
+                            <td>40</td> 
+                            <td>5</td> 
+                            <td>30</td> 
+                            <td>20</td> 
+                            <td>7</td> 
+                            <td>40</td> 
+                            <td>8</td> 
+
+
+                            
+                         </tr>
+                        <tr bgcolor="white" align="center">
+                        <td>已修</td> 
+                        <td>{{ yx_1 }}</td> 
+                        <td>{{ yx_2 }}</td> 
+                        <td>{{ yx_3 }}</td> 
+                        <td>{{ yx_4 }}</td> 
+                        <td>{{ yx_5 }}</td> 
+                        <td>{{ yx_6 }}</td> 
+                        <td>{{ yx_7 }}</td> 
+                        <td>{{ yx_8 }}</td> 
+                     </tr>
+
+                       <tr bgcolor="white" align="center">
+                          <td>待修</td> 
+                          <td>{{ dx_1 }}</td> 
+                          <td>{{ dx_2 }}</td> 
+                          <td>{{ dx_3 }}</td> 
+                          <td>{{ dx_4 }}</td> 
+                          <td>{{ dx_5 }}</td> 
+                          <td>{{ dx_6 }}</td> 
+                          <td>{{ dx_7 }}</td> 
+                          <td>{{ dx_8 }}</td> 
+
+
+                          
+                       </tr>
+         
+                           
+                           
+                         
+                      </table>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+ <div class="row mt-5">
+        <div class="col-xl-12 mb-5 mb-xl-0 container">
+          <div class="card shadow">
+
+
+              <div class="card-header bg-transparent" id="jiaohu_3">
+                  <div class="row align-items-center">
+                  <div class="col">
+                    <h2 class="mb-0">历年课程总表</h2>
+                      <h6 class="text-uppercase text-muted ls-1 mb-1">课程表与学分</h6>
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+
+              <div style="height: 100%;width: 100%" class="table-responsive">
+                        {{ data_all|safe }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      </div>
+        {% include 'includes/footer.html' %}
+
+      </div>
+      

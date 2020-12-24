@@ -1,10 +1,10 @@
 <div align="center">
-  <h1><a href="http://zxpzxp.cn/">python flask架站自我策展</a></h1>
+  <h1><a href="http://nfue.top/">python flask架站自我策展</a></h1>
 
   <p>python_falsk_web</p>
 </div>
 
-# 项目地址[zxpzxp.cn](http://zxpzxp.cn/)
+# 项目地址[nfue.top](http://nfue.top/)
 > 18级《Python》的每一位同学要展示总结其Python能力，以笔记及电子讲义的列表目录及说明页为入口，放在Github或Github架的Jekyll网站为主，并提交自我策展说明页 url。
 
 |发布日期|2020年1月5日|
@@ -12,14 +12,59 @@
 |产品名称|python_falsk_web|
 |项目现状|项目完成|
 |文件的主人|黄杰琪|
-|领头的设计师|郑晓萍|
 |领头的开发者|黄杰琪|
 |版本号|v1.1|
-|更新内容|代码上传与技术文档撰写|
+|更新内容|新版本上传于项目详情重新书写|
 
+# 最近更新
+> 上传文件夹flask_last_v1.2_2020.11.28
+- 增加学分统计系统，该系统直接爬取教务系统，根据网络与新媒体专业人才培养方案进行计算
+- 存在的BUG：转学生和部分存在课程补选、退选、迟交及各种未知情况可能导致计算结果不正确
 
+# 如何使用?
+> 如何复现该项目？很多项目都只给代码并没有提供即可即用的引导，此项目开源代码并进行复现教学，供更多伙伴入门flask web开发！
 
+## 复现步骤
+> 你可能会在步骤中踩坑，请提交`issue`到本项目寻求解决
 
+```ash
+$ # Clone the sources 首先克隆本项目
+$ git https://github.com/huangjieqi/python.git
+$ cd flask-argon-dashboard
+$
+$
+$ # 根据设备创建虚拟环境并激活进入虚拟环境
+$ # Virtualenv modules installation (Unix based systems)
+$ virtualenv --no-site-packages env
+$ source env/bin/activate
+$
+$ # Virtualenv modules installation (Windows based systems)
+$ # virtualenv --no-site-packages env
+$ # .\env\Scripts\activate
+$ 
+$ # 下载所需的第三方库
+$ # Install requirements
+$ pip3 install -r requirements.txt
+$
+$
+$ # 设定flask配置环境，也可自行将代码改为python app.py的形式 
+$ # Set the FLASK_APP environment variable
+$ (Unix/Mac) export FLASK_APP=run.py
+$ (Windows) set FLASK_APP=run.py
+$ (Powershell) $env:FLASK_APP = ".\run.py"
+$
+$ # Set up the DEBUG environment
+$ # (Unix/Mac) export FLASK_ENV=development
+$ # (Windows) set FLASK_ENV=development
+$ # (Powershell) $env:FLASK_ENV = "development"
+$
+$ # Run the application
+$ # --host=0.0.0.0 - expose the app on all network interfaces (default 127.0.0.1)
+$ # --port=5000    - specify the app port (default 5000)  
+$ flask run --host=0.0.0.0 --port=5000
+$ # 运行即可看到网站，如果报错请检查是否有其他第三方库未安装，及环境变量和虚拟环境的配置
+$ # Access the app in browser: http://127.0.0.1:5000/
+```
 
 ## :warning:协作作品的要求（python部分）：
 
@@ -186,9 +231,6 @@ def jiaohu_1():
 ```
 
 
-#### 上传pythonanywhere/提交域名完善的个人网站
-
-##### [zxpzxp.cn](http://zxpzxp.cn/)
 
 
 ## :hammer: python基础阶段展示

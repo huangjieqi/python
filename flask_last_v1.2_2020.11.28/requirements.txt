@@ -1,0 +1,14 @@
+flask
+flask_login
+flask_migrate
+flask_wtf
+flask_sqlalchemy
+flask_bcrypt
+gunicorn
+pyecharts
+numpy
+plotly
+cufflinks
+pandas
+dash
+email_validator

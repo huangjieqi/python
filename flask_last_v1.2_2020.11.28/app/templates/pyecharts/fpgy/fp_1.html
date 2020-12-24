@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="e1b5a4461cdf4d8597a48379fc078f20" class="chart-container" style="width:810px; height:500px;"></div>
+    <script>
+        var chart_e1b5a4461cdf4d8597a48379fc078f20 = echarts.init(
+            document.getElementById('e1b5a4461cdf4d8597a48379fc078f20'), 'white', {renderer: 'canvas'});
+        var option_e1b5a4461cdf4d8597a48379fc078f20 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "GDP\u6307\u6570",
+            "data": [
+                1873.8,
+                2073.1,
+                2271.1,
+                2449.6,
+                2639.9,
+                2832.6,
+                3028.2,
+                3232.2,
+                3450.6,
+                3677.2
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u57ce\u5e02\u4f4e\u4fdd\u4eba\u6570/\u4e07\u4eba",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2018/1/1",
+                    1008.0
+                ],
+                [
+                    "2017/1/1",
+                    1261.0
+                ],
+                [
+                    "2016/1/1",
+                    1480.2
+                ],
+                [
+                    "2015/1/1",
+                    1701.1
+                ],
+                [
+                    "2014/1/1",
+                    1877.0
+                ],
+                [
+                    "2013/1/1",
+                    2064.0
+                ],
+                [
+                    "2012/1/1",
+                    2143.5
+                ],
+                [
+                    "2011/1/1",
+                    2276.8
+                ],
+                [
+                    "2010/1/1",
+                    2310.5
+                ],
+                [
+                    "2009/1/1",
+                    2345.6
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u519c\u6751\u4f4e\u4fdd\u4eba\u6570/\u4e07\u4eba",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2018/1/1",
+                    3520.0
+                ],
+                [
+                    "2017/1/1",
+                    4045.2
+                ],
+                [
+                    "2016/1/1",
+                    4586.5
+                ],
+                [
+                    "2015/1/1",
+                    4903.6
+                ],
+                [
+                    "2014/1/1",
+                    5207.0
+                ],
+                [
+                    "2013/1/1",
+                    5388.0
+                ],
+                [
+                    "2012/1/1",
+                    5344.5
+                ],
+                [
+                    "2011/1/1",
+                    5305.7
+                ],
+                [
+                    "2010/1/1",
+                    5214.0
+                ],
+                [
+                    "2009/1/1",
+                    4760.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "GDP\u6307\u6570",
+                "\u57ce\u5e02\u4f4e\u4fdd\u4eba\u6570/\u4e07\u4eba",
+                "\u519c\u6751\u4f4e\u4fdd\u4eba\u6570/\u4e07\u4eba"
+            ],
+            "selected": {
+                "GDP\u6307\u6570": true
+            },
+            "show": true,
+            "right": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2009/1/1",
+                "2010/1/1",
+                "2011/1/1",
+                "2012/1/1",
+                "2013/1/1",
+                "2014/1/1",
+                "2015/1/1",
+                "2016/1/1",
+                "2017/1/1",
+                "2018/1/1"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "GDP\u3001\u519c\u6751\u57ce\u5e02\u4f4e\u4fdd\u4eba\u6570\u5bf9\u6bd4",
+            "subtext": "\u968f\u7740GDP\u7684\u589e\u957f\uff0c\u5386\u5e74\u4f4e\u4fdd\u4eba\u6570\u9010\u6e10\u51cf\u5c11\uff0c\u57ce\u5e02\u4f4e\u4fdd\u4eba\u6570\u51cf\u5c11\u8fc5\u901f\uff0c\u4f46\u519c\u6751\u4ecd\u7136\u5b58\u5728\u5f88\u591a\u4f4e\u4fdd\u6237\u3002",
+            "subtextStyle": {
+                "color": "red",
+                "fontStyle": "italic",
+                "fontSize": 14
+            }
+        }
+    ]
+};
+        chart_e1b5a4461cdf4d8597a48379fc078f20.setOption(option_e1b5a4461cdf4d8597a48379fc078f20);
+    </script>
+</body>
+</html>

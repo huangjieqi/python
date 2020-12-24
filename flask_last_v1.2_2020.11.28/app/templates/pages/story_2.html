@@ -1,0 +1,209 @@
+  <!-- Main content -->
+  <div class="main-content">
+
+    <!-- Top navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">仪表板</a>
+        <!-- Form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+        </form>
+        <!-- User -->
+        {% include 'includes/user-dropdown.html' %}
+        
+      </div>
+    </nav>
+
+    <!-- Header -->
+    {% include 'includes/top-stats_2.html' %}
+
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+      <div class="row">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+{#            <div class="card-header">#}
+{##}
+{#              <div class="row align-items-center">#}
+{#                <div class="col">#}
+{#                  <h6 class="text-uppercase text-light ls-1 mb-1">Overview</h6>#}
+{#                  <h2 class="text-white mb-0">Sales value</h2>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                  <ul class="nav nav-pills justify-content-end">#}
+{#                    <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="$" data-suffix="k">#}
+{#                      <a href="#" class="nav-link py-2 px-3 active" data-toggle="tab">#}
+{#                        <span class="d-none d-md-block">Month</span>#}
+{#                        <span class="d-md-none">M</span>#}
+{#                      </a>#}
+{#                    </li>#}
+{#                    <li class="nav-item" data-toggle="chart" data-target="#chart-sales" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">#}
+{#                      <a href="#" class="nav-link py-2 px-3" data-toggle="tab">#}
+{#                        <span class="d-none d-md-block">Week</span>#}
+{#                        <span class="d-md-none">W</span>#}
+{#                      </a>#}
+{#                    </li>#}
+{#                  </ul>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ word|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的开始</h6>
+                  <h2 class="mb-0">哪个地区最能生？</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">1950~2020年世界生育率变化</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+
+                  <h2>从1950~2020年的世界生育率时间线播放图中可以看出一下信息</h2>
+                 <p> 世界生育率整体上是处于下降趋势。尼日尔一直以来是处于高生育率的状态，变化基本不大。</p>
+                <p>而德国等国家真好和尼日尔相反，一直以来处于低生育率，变化趋势相对较为稳定；中国、美国和巴西等出生率变化明显，
+                  从1950的中高出生率到2015年变成了低出生率。可以看出中东地区劳动力丰富，这也是我国推行“一带一路”的重要原因之一</p>
+                  <p>中国从曾经的高生育率，实行计划生育后，逐年下降，如今趋于平缓，劳动力资源在慢慢减少，人口基数趋于平稳</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+{#            <div class="card-header">#}
+{##}
+{#              <div class="row align-items-center">#}
+{#                <div class="col">#}
+{#                  <h6 class="text-uppercase text-light ls-1 mb-1">Overview</h6>#}
+{#                  <h2 class="text-white mb-0">Sales value</h2>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                  <ul class="nav nav-pills justify-content-end">#}
+{#                    <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="$" data-suffix="k">#}
+{#                      <a href="#" class="nav-link py-2 px-3 active" data-toggle="tab">#}
+{#                        <span class="d-none d-md-block">Month</span>#}
+{#                        <span class="d-md-none">M</span>#}
+{#                      </a>#}
+{#                    </li>#}
+{#                    <li class="nav-item" data-toggle="chart" data-target="#chart-sales" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">#}
+{#                      <a href="#" class="nav-link py-2 px-3" data-toggle="tab">#}
+{#                        <span class="d-none d-md-block">Week</span>#}
+{#                        <span class="d-md-none">W</span>#}
+{#                      </a>#}
+{#                    </li>#}
+{#                  </ul>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ word_1|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的开始</h6>
+                  <h2 class="mb-0">中国历年的出生率高吗？</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">历年来中国的出生率变化趋势</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+                  <h2>从历年来中国的出生率变化趋势可以看出：</h2>
+                <p>1950年到1975年，中国虽然生育率有升有降，但基本处于高生育率的状态；</p>
+                  <p>1982年，开始全面实施计划生育，生育率持续下降，逐渐趋于平缓状态，成为了低生育率的国家；</p>
+                  <p>中国从曾经的高生育率，实行计划生育后，逐年下降，如今趋于平缓，劳动力人口可能会逐年下降，人口基数趋于平稳</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-body">
+
+{#              <!-- Chart -->#}
+              <div style="height: 100%;width: 100%">
+                  {{ word_2|safe }}
+{#                <!-- Chart wrapper -->#}
+{#                <canvas id="chart-sales" class="chart-canvas"></canvas>#}
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">故事的发展</h6>
+                  <h2 class="mb-0">你的妈妈几岁生了你？</h2>
+                    <h6 class="text-uppercase text-muted ls-1 mb-1">1950~2020年中国各年龄层生育情况</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div style="height: 100%;width: 100%">
+
+
+                  <h2>中国的生育情况</h2>
+                <p>由图可以看出，1950-1984年，25-29岁的女士生育情况总是位于第一；但是到1985年后，20-24岁的女士反而超过了25-29岁的女士成为第一。</p>
+                  <p>据了解，1982中国才恢复中断了18年的人口普查和开始有了较为正规的人口登记制度。</p>
+                  <p>除此之外，1985年是改革承前启后的一个时间点。80年代中期，我国的科技、经济等领域的改革陆续启动。</p>
+                  <p>受改革的影响，女性的思想也在悄然发生变化。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      {% include 'includes/footer.html' %}
+
+    </div>
+  </div>
+

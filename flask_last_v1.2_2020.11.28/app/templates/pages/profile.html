@@ -1,0 +1,45 @@
+
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Top navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="/profile.html">用户界面</a>
+        <!-- Form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+        </form>
+        <!-- User -->
+        {% include 'includes/user-dropdown.html' %}
+
+      </div>
+    </nav>
+    <!-- Header -->
+    <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" 
+         style="min-height: 600px; background-image: url(/static/assets/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
+      <!-- Mask -->
+      <span class="mask bg-gradient-default opacity-8"></span>
+      <!-- Header container -->
+      <div class="container-fluid d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-9 col-md-11">
+            <h1 class="display-2 text-white">你好 {{ current_user.user }}</h1>
+              <h4 class="display-3 text-white">左边上导航栏有精彩的故事和交互功能等待你探索</h4>
+              <h3 class="display-4 text-white">左边下导航栏我制作这个网站的各种技术文献与技术文档</h3>
+            <p class="text-white mt-0 mb-5">这是中山大学南方学院文学与传媒学院网络与新媒体专业18级python课程与17级交互可视化合作完成的web_flask网站《这个“业”你还将就吗？》</p>
+            <p><a href="/word" class="btn btn-info">开始探索</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+
+  </div>
